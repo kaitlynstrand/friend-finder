@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body style="background: green">
+  <div>
+    <div class="container">
+      <h2>Really Personal Questions></h2>
+      <br>
+      <h3><strong>About Your</strong></h3>
+      <h4>Name (Required))</h4>
+      <input type="text" name id="name" class="form-control" required>
+      <h4>Link to Photo Image (Required)</h4>
+      <input type="text" name id="photo" class="form-control" required>
+      <br>
+
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+<h3><strong>Question 1</strong></h3>
+<h4>Do You Second Guess Everything?</h4>
+<div class="btn-group dropdown">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Answer: <span class="selection"></span><span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a class="dropdown-item" value="#">1</a></li>
+    <li><a class="dropdown-item" value="#">2</a></li>
+    <li><a class="dropdown-item" value="3">3</a></li>
+    <li><a class="dropdown-item" value="4">4</a></li>
+    <li><a class="dropdown-item" value="5">5</a></li>
+  </ul>
+</div>
+
+<h3><strong>Question 2</strong></h3>
+<h4>Are You Really Enthusiastic?</h4>
+<div class="btn-group dropdown">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Answer: <span class="selection"></span><span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a class="dropdown-item" value="#">1</a></li>
+    <li><a class="dropdown-item" value="#">2</a></li>
+    <li><a class="dropdown-item" value="3">3</a></li>
+    <li><a class="dropdown-item" value="4">4</a></li>
+    <li><a class="dropdown-item" value="5">5</a></li>
+  </ul>
+</div>
+
+<h3><strong>Question 3</strong></h3>
+<h4>Do You Get Along With Your Siblings?</h4>
+<div class="btn-group dropdown">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Answer: <span class="selection"></span><span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a class="dropdown-item" value="#">1</a></li>
+    <li><a class="dropdown-item" value="#">2</a></li>
+    <li><a class="dropdown-item" value="3">3</a></li>
+    <li><a class="dropdown-item" value="4">4</a></li>
+    <li><a class="dropdown-item" value="5">5</a></li>
+  </ul>
+</div>
+
+<h3><strong>Question 4</strong></h3>
+<h4>Would You Consider Yourself Honest?</h4>
+<div class="btn-group dropdown">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Answer: <span class="selection"></span><span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a class="dropdown-item" value="#">1</a></li>
+    <li><a class="dropdown-item" value="#">2</a></li>
+    <li><a class="dropdown-item" value="3">3</a></li>
+    <li><a class="dropdown-item" value="4">4</a></li>
+    <li><a class="dropdown-item" value="5">5</a></li>
+  </ul>
+</div>
+
+<h3><strong>Question 5</strong></h3>
+<h4>Do You Care A Lot About Being Considered Cool?</h4>
+<div class="btn-group dropdown">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Answer: <span class="selection"></span><span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a class="dropdown-item" value="#">1</a></li>
+    <li><a class="dropdown-item" value="#">2</a></li>
+    <li><a class="dropdown-item" value="3">3</a></li>
+    <li><a class="dropdown-item" value="4">4</a></li>
+    <li><a class="dropdown-item" value="5">5</a></li>
+  </ul>
+</div>
+
+<script>
+    $(".dropdown-menu li a").click(function() {
+    
+    $(this).parents(".btn-group").find(".selection").text($(this).text());
+    $(this).parents(".btn-group").find(".selection").val($(this).text());
+    console.log(this.text)
+  })
+</script>
+      
